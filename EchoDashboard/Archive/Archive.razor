@@ -1,0 +1,39 @@
+﻿@page "/archive"
+@inherits ArchiveDataModel
+
+@using Models
+@using Blazorise.DataGrid
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<button class="btn btn-primary" @onclick="RetrieveWeatherForecastsAsync">Retrieve Weather Forecasts</button>
+
+@if (State!.IsLoading)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <DataGrid TItem="WeatherForecast" Data="@State!.WeatherForecasts" Sortable="true" Filterable="true" Editable="true" ShowPager="true" PageSize="10">
+        <DataGridCommandColumn>
+            <NewCommandTemplate>
+                <Button Color="Color.Success" Clicked="@context.Clicked">New</Button>
+            </NewCommandTemplate>
+            <EditCommandTemplate>
+                <Button Color="Color.Primary" Clicked="@context.Clicked">Edit</Button>
+            </EditCommandTemplate>
+            <DeleteCommandTemplate>
+                <Button Color="Color.Danger" Clicked="@context.Clicked">Delete</Button>
+            </DeleteCommandTemplate>
+        </DataGridCommandColumn>
+
+        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.Date)" Caption="Date" Editable="true"></DataGridColumn>
+        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.TemperatureC)" Caption="TemperatureC" Editable="true"></DataGridColumn>
+        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.TemperatureF)" Caption="TemperatureF" Editable="true"></DataGridColumn>
+        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.Summary)" Caption="Summary" Editable="true"></DataGridColumn>
+    </DataGrid>
+}

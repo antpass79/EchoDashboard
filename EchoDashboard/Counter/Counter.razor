@@ -1,0 +1,15 @@
+﻿@page "/counter"
+@inherits CounterDataModel
+
+@using EchoDashboard.Shared.Facades
+@using EchoDashboard.Shared.States
+@using Fluxor
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @State?.Value</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Increment</button>
+<button class="btn btn-primary" @onclick="DecrementCount">Decrement</button>

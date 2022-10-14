@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazorise.Bootstrap" Version="1.1.1" />
+    <PackageReference Include="Blazorise.DataGrid" Version="1.1.1" />
+    <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.9" />
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EchoDashboard\Shared\EchoDashboard.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

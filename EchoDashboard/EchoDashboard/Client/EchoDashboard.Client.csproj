@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazorise.Bootstrap" Version="1.1.1" />
+    <PackageReference Include="Blazorise.DataGrid" Version="1.1.1" />
+    <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.1.1" />
+    <PackageReference Include="Fluxor.Blazor.Web" Version="5.5.0" />
+    <PackageReference Include="Fluxor.Blazor.Web.ReduxDevTools" Version="5.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.9" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Archive\Archive.csproj" />
+    <ProjectReference Include="..\..\Counter\Counter.csproj" />
+    <ProjectReference Include="..\Shared\EchoDashboard.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<BlazorWebAssemblyLazyLoad Include="Archive.dll"></BlazorWebAssemblyLazyLoad>
+		<BlazorWebAssemblyLazyLoad Include="Counter.dll"></BlazorWebAssemblyLazyLoad>
+	</ItemGroup>
+	
+</Project>
