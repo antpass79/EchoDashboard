@@ -34,6 +34,11 @@
             var assemblies = await lazyAssemblyLoader.LoadAssembliesAsync(new[] { "Counter.dll" });
             lazyLoadedAssemblies.AddRange(assemblies);
         }
+        if (context.Path == "lazyload")
+        {
+            var assemblies = await lazyAssemblyLoader.LoadAssembliesAsync(new[] { "LazyLoadBlazorModule.dll" });
+            lazyLoadedAssemblies.AddRange(assemblies);
+        }
     }
 
     Theme appTheme = new Theme

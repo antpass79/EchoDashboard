@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Client\EchoDashboard.Client.csproj" />
-    <ProjectReference Include="..\Shared\EchoDashboard.Shared.csproj" />
   </ItemGroup>
 
 

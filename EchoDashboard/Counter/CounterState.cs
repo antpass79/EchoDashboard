@@ -1,4 +1,4 @@
-﻿using EchoDashboard.Shared.States;
+﻿using MyLab.Platform.Frontend.Framework;
 
 namespace Counter
 {

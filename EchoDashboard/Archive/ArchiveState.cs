@@ -1,5 +1,5 @@
 ﻿using Archive.Models;
-using EchoDashboard.Shared.States;
+using MyLab.Platform.Frontend.Framework;
 
 namespace Archive
 {

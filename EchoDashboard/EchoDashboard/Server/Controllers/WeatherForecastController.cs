@@ -1,5 +1,4 @@
 using EchoDashboard.Server.Models;
-using EchoDashboard.Shared;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EchoDashboard.Server.Controllers

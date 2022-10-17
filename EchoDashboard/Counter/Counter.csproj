@@ -15,9 +15,9 @@
     <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.1.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\EchoDashboard\Shared\EchoDashboard.Shared.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\MyLab.Platform.Frontend.Framework\MyLab.Platform.Frontend.Framework.csproj" />
+	</ItemGroup>
 
 
 

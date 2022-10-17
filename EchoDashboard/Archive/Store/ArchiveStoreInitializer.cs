@@ -1,9 +1,9 @@
 ﻿using Archive.Effects;
 using Archive.Features;
 using Archive.Reducers;
-using EchoDashboard.Shared.Store;
 using Fluxor;
 using Microsoft.Extensions.DependencyInjection;
+using MyLab.Platform.Frontend.Framework.Store;
 
 namespace Archive.Store
 {

@@ -1,8 +1,7 @@
 ﻿using Counter.Features;
 using Counter.Reducers;
-using EchoDashboard.Shared.Facades;
-using EchoDashboard.Shared.Store;
 using Fluxor;
+using MyLab.Platform.Frontend.Framework.Store;
 
 namespace Counter.Store
 {

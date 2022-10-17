@@ -13,14 +13,15 @@
     <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.1.1" />
     <PackageReference Include="Fluxor.Blazor.Web" Version="5.5.0" />
     <PackageReference Include="Fluxor.Blazor.Web.ReduxDevTools" Version="5.5.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.9" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.9" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.10" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Archive\Archive.csproj" />
     <ProjectReference Include="..\..\Counter\Counter.csproj" />
-    <ProjectReference Include="..\Shared\EchoDashboard.Shared.csproj" />
+    <ProjectReference Include="..\..\LazyLoadBlazorModule\LazyLoadBlazorModule.csproj" />
+    <ProjectReference Include="..\..\MyLab.Platform.Frontend.Framework\MyLab.Platform.Frontend.Framework.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +31,7 @@
 	<ItemGroup>
 		<BlazorWebAssemblyLazyLoad Include="Archive.dll"></BlazorWebAssemblyLazyLoad>
 		<BlazorWebAssemblyLazyLoad Include="Counter.dll"></BlazorWebAssemblyLazyLoad>
+		<BlazorWebAssemblyLazyLoad Include="LazyLoadBlazorModule.dll"></BlazorWebAssemblyLazyLoad>
 	</ItemGroup>
 	
 </Project>
