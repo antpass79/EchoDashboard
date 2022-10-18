@@ -4,7 +4,7 @@ namespace Counter.Features
 {
     internal class CounterFeature : Feature<CounterState>
     {
-        public override string GetName() => nameof(CounterFeature);
+        public override string GetName() => nameof(CounterState);
 
         protected override CounterState GetInitialState()
         {

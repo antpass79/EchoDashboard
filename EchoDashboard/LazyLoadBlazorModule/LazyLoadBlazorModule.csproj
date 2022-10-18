@@ -12,11 +12,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fluxor.Blazor.Web" Version="5.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.10" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyLab.Platform.Frontend.Framework\MyLab.Platform.Frontend.Framework.csproj" />
+    <Folder Include="References\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MyLab.Platform.Frontend.Framework">
+      <HintPath>References\MyLab.Platform.Frontend.Framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

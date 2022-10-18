@@ -9,21 +9,11 @@ namespace LazyLoadBlazorModule
     public class EntryPointComponentDataModel : MyLabComponentBase<LazyLoadBlazorModuleState, LazyLoadBlazorModuleFacade, LazyLoadBlazorModuleStoreInitializer>
     {
         public EntryPointComponentDataModel()
-            : base (nameof(LazyLoadBlazorModuleFeature)) { }
+            : base (nameof(LazyLoadBlazorModuleState)) { }
 
         protected override async Task OnInitializeComponentAsync()
         {
             await RetrieveItemsAsync();
-        }
-
-        protected IEnumerable<Item> Items
-        {
-            get
-            {
-                Console.WriteLine(State?.Items?.Count());
-                var items = State?.Items;
-                return items;
-            }
         }
 
         protected async Task RetrieveItemsAsync()

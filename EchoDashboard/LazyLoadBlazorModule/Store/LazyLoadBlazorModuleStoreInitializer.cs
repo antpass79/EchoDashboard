@@ -30,11 +30,10 @@ namespace LazyLoadBlazorModule.Store
         protected override IEnumerable<IEffect> BuildEffects(IServiceProvider? serviceProvider)
         {
             var httpClient = serviceProvider!.GetService<HttpClient>();
-            var dispatcher = serviceProvider!.GetService<IDispatcher>();
 
             return new IEffect[]
             {
-                new LoadItemsEffect(httpClient!, dispatcher!)
+                new LoadItemsEffect(httpClient!)
             };
         }
     }

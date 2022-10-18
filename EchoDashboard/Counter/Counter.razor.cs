@@ -8,7 +8,7 @@ namespace Counter
     public class CounterDataModel : MyLabComponentBase<CounterState, CounterFacade, CounterStoreInitializer>
     {
         public CounterDataModel()
-            : base (nameof(CounterFeature)) { }
+            : base (nameof(CounterState)) { }
 
         protected void IncrementCount()
         {

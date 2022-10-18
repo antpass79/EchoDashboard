@@ -33,7 +33,7 @@ namespace MyLab.Platform.Frontend.Framework
         IServiceProvider? ServiceProvider { get; set; }
 
         [Inject]
-        IStore? Store { get; set; }
+        protected IStore? Store { get; set; }
 
         [Inject]
         StateFacadeRegistry? StateFacadeRegistry { get; set; }
@@ -53,16 +53,42 @@ namespace MyLab.Platform.Frontend.Framework
         {
             OnInitializeFacade();
 
+            OnUpdateState();
+
             await OnInitializeComponentAsync();
 
             await base.OnInitializedAsync();
         }
 
+        virtual protected TFacade BuildFacade()
+        {
+            return Activator.CreateInstance<TFacade>();
+        }
+
         virtual protected Task OnInitializeComponentAsync() { return Task.CompletedTask; }
+
+        protected override void Dispose(bool disposing)
+        {
+            var feature = Store!.Features[_componentKey];
+            feature.StateChanged -= OnFeatureStateChanged;
+
+            base.Dispose(disposing);
+        }
 
         #endregion
 
         #region Private Functions
+
+        private void OnUpdateState()
+        {
+            var feature = Store!.Features[_componentKey];
+            feature.StateChanged += OnFeatureStateChanged;
+        }
+
+        void OnFeatureStateChanged(object? sender, EventArgs args)
+        {
+            StateHasChanged();
+        }
 
         void OnInitializeFacade()
         {
@@ -80,11 +106,6 @@ namespace MyLab.Platform.Frontend.Framework
         private bool FacadeInitialized()
         {
             return StateFacadeRegistry!.Exists(_componentKey);
-        }
-
-        private TFacade BuildFacade()
-        {
-            return Activator.CreateInstance<TFacade>();
         }
 
         #endregion

@@ -30,11 +30,10 @@ namespace Archive.Store
         protected override IEnumerable<IEffect> BuildEffects(IServiceProvider? serviceProvider)
         {
             var httpClient = serviceProvider!.GetService<HttpClient>();
-            var dispatcher = serviceProvider!.GetService<IDispatcher>();
 
             return new IEffect[]
             {
-                new LoadWeatherForecastsEffect(httpClient!, dispatcher!)
+                new LoadWeatherForecastsEffect(httpClient!)
             };
         }
     }
