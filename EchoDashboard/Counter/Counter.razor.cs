@@ -1,11 +1,11 @@
 ﻿using Counter.Facades;
 using Counter.Features;
 using Counter.Store;
-using MyLab.Platform.Frontend.Framework;
+using Platform.Frontend.Framework;
 
 namespace Counter
 {
-    public class CounterDataModel : MyLabComponentBase<CounterState, CounterFacade, CounterStoreInitializer>
+    public class CounterDataModel : BasePageComponent<CounterState, CounterFacade, CounterStoreInitializer>
     {
         public CounterDataModel()
             : base (nameof(CounterState)) { }

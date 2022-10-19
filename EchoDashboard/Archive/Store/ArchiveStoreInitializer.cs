@@ -3,7 +3,7 @@ using Archive.Features;
 using Archive.Reducers;
 using Fluxor;
 using Microsoft.Extensions.DependencyInjection;
-using MyLab.Platform.Frontend.Framework.Store;
+using Platform.Frontend.Framework.Store;
 
 namespace Archive.Store
 {

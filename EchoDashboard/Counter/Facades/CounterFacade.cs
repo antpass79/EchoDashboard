@@ -1,7 +1,7 @@
 ﻿using Counter.Actions;
 using Counter.Store;
 using Fluxor;
-using MyLab.Platform.Frontend.Framework.Facades;
+using Platform.Frontend.Framework.Facades;
 
 namespace Counter.Facades
 {

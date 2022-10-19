@@ -1,5 +1,5 @@
 ﻿using Archive.Models;
-using MyLab.Platform.Frontend.Framework;
+using Platform.Frontend.Framework;
 
 namespace Archive
 {
@@ -9,6 +9,6 @@ namespace Archive
             : base(isLoading, errorMessages) =>
             WeatherForecasts = weatherForecasts;
 
-        public IEnumerable<WeatherForecast> WeatherForecasts { get; }
+        public IEnumerable<WeatherForecast> WeatherForecasts { get; init;  }
     }
 }

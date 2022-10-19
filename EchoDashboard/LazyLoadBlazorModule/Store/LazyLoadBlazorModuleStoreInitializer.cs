@@ -3,7 +3,7 @@ using LazyLoadBlazorModule.Effects;
 using LazyLoadBlazorModule.Features;
 using LazyLoadBlazorModule.Reducers;
 using Microsoft.Extensions.DependencyInjection;
-using MyLab.Platform.Frontend.Framework.Store;
+using Platform.Frontend.Framework.Store;
 
 namespace LazyLoadBlazorModule.Store
 {

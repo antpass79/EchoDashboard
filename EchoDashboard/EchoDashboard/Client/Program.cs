@@ -5,7 +5,7 @@ using EchoDashboard.Client;
 using Fluxor;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using MyLab.Platform.Frontend.Framework.Facades;
+using Platform.Frontend.Framework.Facades;
 using System.Reflection;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

@@ -1,4 +1,4 @@
-﻿using MyLab.Platform.Frontend.Framework;
+﻿using Platform.Frontend.Framework;
 
 namespace Counter
 {
@@ -10,6 +10,6 @@ namespace Counter
         public CounterState(bool isLoading, IEnumerable<string> errorMessages, int value)
             : base(isLoading, errorMessages) => Value = value;
 
-        public int Value { get; } = 0;
+        public int Value { get; init; } = 0;
     }
 }

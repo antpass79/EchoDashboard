@@ -1,7 +1,7 @@
 ﻿using Counter.Features;
 using Counter.Reducers;
 using Fluxor;
-using MyLab.Platform.Frontend.Framework.Store;
+using Platform.Frontend.Framework.Store;
 
 namespace Counter.Store
 {

@@ -21,9 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="MyLab.Platform.Frontend.Framework">
-      <HintPath>References\MyLab.Platform.Frontend.Framework.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Platform.Frontend.Framework\Platform.Frontend.Framework.csproj" />
   </ItemGroup>
 
 </Project>

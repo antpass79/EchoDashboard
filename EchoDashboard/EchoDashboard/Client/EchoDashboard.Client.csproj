@@ -21,7 +21,7 @@
     <ProjectReference Include="..\..\Archive\Archive.csproj" />
     <ProjectReference Include="..\..\Counter\Counter.csproj" />
     <ProjectReference Include="..\..\LazyLoadBlazorModule\LazyLoadBlazorModule.csproj" />
-    <ProjectReference Include="..\..\MyLab.Platform.Frontend.Framework\MyLab.Platform.Frontend.Framework.csproj" />
+    <ProjectReference Include="..\..\Platform.Frontend.Framework\Platform.Frontend.Framework.csproj" />
   </ItemGroup>
 
   <ItemGroup>

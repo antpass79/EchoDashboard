@@ -1,12 +1,10 @@
 ﻿using LazyLoadBlazorModule.Facades;
-using LazyLoadBlazorModule.Features;
-using LazyLoadBlazorModule.Models;
 using LazyLoadBlazorModule.Store;
-using MyLab.Platform.Frontend.Framework;
+using Platform.Frontend.Framework;
 
 namespace LazyLoadBlazorModule
 {
-    public class EntryPointComponentDataModel : MyLabComponentBase<LazyLoadBlazorModuleState, LazyLoadBlazorModuleFacade, LazyLoadBlazorModuleStoreInitializer>
+    public class EntryPointComponentDataModel : BasePageComponent<LazyLoadBlazorModuleState, LazyLoadBlazorModuleFacade, LazyLoadBlazorModuleStoreInitializer>
     {
         public EntryPointComponentDataModel()
             : base (nameof(LazyLoadBlazorModuleState)) { }

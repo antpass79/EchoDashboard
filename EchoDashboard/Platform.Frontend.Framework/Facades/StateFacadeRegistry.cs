@@ -1,4 +1,4 @@
-﻿namespace MyLab.Platform.Frontend.Framework.Facades
+﻿namespace Platform.Frontend.Framework.Facades
 {
     public class StateFacadeRegistry
     {

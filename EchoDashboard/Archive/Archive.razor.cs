@@ -2,11 +2,11 @@
 using Archive.Facades;
 using Archive.Features;
 using Archive.Store;
-using MyLab.Platform.Frontend.Framework;
+using Platform.Frontend.Framework;
 
 namespace Archive
 {
-    public class ArchiveDataModel : MyLabComponentBase<ArchiveState, ArchiveFacade, ArchiveStoreInitializer>
+    public class ArchiveDataModel : BasePageComponent<ArchiveState, ArchiveFacade, ArchiveStoreInitializer>
     {
         public ArchiveDataModel()
             : base (nameof(ArchiveState)) { }

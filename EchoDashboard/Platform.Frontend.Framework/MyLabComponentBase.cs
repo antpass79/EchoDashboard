@@ -2,12 +2,12 @@
 using Fluxor.Blazor.Web.Components;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Logging;
-using MyLab.Platform.Frontend.Framework.Facades;
-using MyLab.Platform.Frontend.Framework.Store;
+using Platform.Frontend.Framework.Facades;
+using Platform.Frontend.Framework.Store;
 
-namespace MyLab.Platform.Frontend.Framework
+namespace Platform.Frontend.Framework
 {
-    public abstract class MyLabComponentBase<TState, TFacade, TStoreInitializer> : FluxorComponent
+    public abstract class BasePageComponent<TState, TFacade, TStoreInitializer> : FluxorComponent
         where TState : BaseState
         where TFacade : StateFacade<TState, TFacade, TStoreInitializer>
         where TStoreInitializer : IStoreInitializer<TState>
@@ -20,7 +20,7 @@ namespace MyLab.Platform.Frontend.Framework
 
         #region Constructors
 
-        protected MyLabComponentBase(string componentKey)
+        protected BasePageComponent(string componentKey)
         {
             _componentKey = componentKey;
         }
@@ -39,7 +39,7 @@ namespace MyLab.Platform.Frontend.Framework
         StateFacadeRegistry? StateFacadeRegistry { get; set; }
 
         [Inject]
-        ILogger<MyLabComponentBase<TState, TFacade, TStoreInitializer>>? Logger { get; set; }
+        ILogger<BasePageComponent<TState, TFacade, TStoreInitializer>>? Logger { get; set; }
 
         protected TState? State => Store!.Features[_componentKey]?.GetState() as TState;
 

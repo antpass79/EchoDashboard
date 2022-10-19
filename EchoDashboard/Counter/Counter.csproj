@@ -16,7 +16,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\MyLab.Platform.Frontend.Framework\MyLab.Platform.Frontend.Framework.csproj" />
+	  <ProjectReference Include="..\Platform.Frontend.Framework\Platform.Frontend.Framework.csproj" />
 	</ItemGroup>
 
 

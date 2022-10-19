@@ -1,4 +1,4 @@
-﻿namespace MyLab.Platform.Frontend.Framework
+﻿namespace Platform.Frontend.Framework
 {
     public abstract class BaseState
     {
@@ -8,8 +8,8 @@
             ErrorMessages = errorMessages;
         }
 
-        public bool IsLoading { get; }
-        public IEnumerable<string> ErrorMessages { get; }
+        public bool IsLoading { get; init;  }
+        public IEnumerable<string> ErrorMessages { get; init; }
         public bool HasErrors => ErrorMessages.Any();
     }
 }

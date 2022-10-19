@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archive", "Archive\Archive.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Counter", "Counter\Counter.csproj", "{F2C2C9E8-BCAA-4451-BAE8-99D020B0C38E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLab.Platform.Frontend.Framework", "MyLab.Platform.Frontend.Framework\MyLab.Platform.Frontend.Framework.csproj", "{A4FC460D-4E70-44EE-9591-3536DAF014A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Frontend.Framework", "Platform.Frontend.Framework\Platform.Frontend.Framework.csproj", "{A4FC460D-4E70-44EE-9591-3536DAF014A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyLoadBlazorModule", "LazyLoadBlazorModule\LazyLoadBlazorModule.csproj", "{56B91DA5-D094-4A75-9F25-8637205AB3AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyLoadBlazorModule", "LazyLoadBlazorModule\LazyLoadBlazorModule.csproj", "{56B91DA5-D094-4A75-9F25-8637205AB3AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 ﻿using Fluxor;
 
-namespace MyLab.Platform.Frontend.Framework.Store
+namespace Platform.Frontend.Framework.Store
 {
     public abstract class StoreInitializer<TState> : IStoreInitializer<TState>
         where TState : BaseState

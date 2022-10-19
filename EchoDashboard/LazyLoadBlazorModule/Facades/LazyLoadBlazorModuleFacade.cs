@@ -1,6 +1,6 @@
 ﻿using LazyLoadBlazorModule.Actions;
 using LazyLoadBlazorModule.Store;
-using MyLab.Platform.Frontend.Framework.Facades;
+using Platform.Frontend.Framework.Facades;
 
 namespace LazyLoadBlazorModule.Facades
 {

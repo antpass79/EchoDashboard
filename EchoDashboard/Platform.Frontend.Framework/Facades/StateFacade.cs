@@ -1,9 +1,9 @@
 ﻿using Fluxor;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MyLab.Platform.Frontend.Framework.Store;
+using Platform.Frontend.Framework.Store;
 
-namespace MyLab.Platform.Frontend.Framework.Facades
+namespace Platform.Frontend.Framework.Facades
 {
     public abstract class StateFacade<TState, TFacade, TStoreInitializer> : IStateFacade
         where TState : BaseState

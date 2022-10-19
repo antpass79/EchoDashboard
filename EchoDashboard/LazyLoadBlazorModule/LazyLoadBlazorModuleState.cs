@@ -1,5 +1,5 @@
 ﻿using LazyLoadBlazorModule.Models;
-using MyLab.Platform.Frontend.Framework;
+using Platform.Frontend.Framework;
 
 namespace LazyLoadBlazorModule
 {
@@ -9,6 +9,6 @@ namespace LazyLoadBlazorModule
             : base(isLoading, errorMessages) =>
             Items = items;
 
-        public IEnumerable<Item> Items { get; }
+        public IEnumerable<Item> Items { get; init;  }
     }
 }
